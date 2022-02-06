@@ -44,7 +44,7 @@ from imblearn.pipeline import Pipeline
 
 def nettoyage_data ():
 #lecture des données sms_spam
-    spam = pd.read_csv('spam.csv',encoding ='ISO-8859-1')
+    spam = pd.read_csv("https://raw.githubusercontent.com/dataIA-2021/Sms_Spam_Tess_Marceline/main/spam.csv",encoding ='ISO-8859-1')
 #Supression des 3 dernières colonnes
     spam1=spam.drop(columns=["Unnamed: 2", "Unnamed: 3","Unnamed: 4"])
 #renommer les colonnes
